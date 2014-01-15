@@ -19,16 +19,27 @@ The app would be a Android App and I write Hangman in Java.
 
 
 #### mockups:
-* homescreen, with buttons to:  - start a new game
-                                - rules
-                                - settings
-                                - highscores
-                                - quiet
-* every page has a toolbar with a menu button, so you can you go to the homescreen.
-* settings page, that the user can choose how many letters the word should have and how many options the user has.
-* highscores page, there you see the top ten of the users best scores.
-* rules page, the explain the rules of Hangman.
-* game page, here should you the how long the word is that the user should guess, how many chances the user has 
-  left, a keyboard should appear and you should see what the user already typed in.
-* Winner and a Game over Page
-                                
+<img src="http://imageshack.com/a/img543/5825/ooj4.png">
+
+####De java files
+#####Main.java:
+Here are few buttons to :
+* start the game,
+* the rules,
+* settings,
+* scores 
+* and quit. 
+
+#####Game.java
+has several functions:
+* Should load the dictionaries with words and pick random words a word from the                                         dictionary from de database. If a user choose a certain number for the word, the program                               should pick a random a word with that number.  The database is in Sqlite with a column                                  for the words and a column for how long the word is. 
+* Input letters, it should not matter if it is a capital of lowercase letter. The user can only type in letters and checks if the letter isn’t  already guessed. 
+* Function for how many chances a user has. This depends also on the users input. 
+* Function that checks if the input is in the word or not, update the page and checks If all the letters are guessed (than the user has won -> winner page and save the score in the High score database) of if there are enough chances left (if not the user has lost -> loser page). 
+
+#####Settings.java
+* Has two seekbars. One for how many letters the user wants the other for how many chances the user wants. And is has a “Start game” button. 
+
+#####Scores.java
+* Has a top 10 of the best results (results with the least mistake are at the top). Make use of a Sqlite Database, where the scores are saved. 
+ 
