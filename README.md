@@ -19,7 +19,7 @@ The app would be a Android App and I write Hangman in Java.
 
 
 #### mockups:
-<img src="http://imageshack.com/a/img543/5825/ooj4.png">
+<img src=http://imagizer.imageshack.us/v2/800x600q90/827/cxzm.png>
 
 ####De java files
 #####Main.java:
