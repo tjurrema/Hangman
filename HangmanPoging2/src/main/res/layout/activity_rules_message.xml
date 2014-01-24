@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".DisplayRulesActivity$PlaceholderFragment"
+    android:background="@drawable/hangmanbackground"
+    >
+
+    <TextView
+        android:text="The rules of the game are simple. In the settings you've choosing how long the word should be and how many chances you've to guess the word. You can only type letters. If your chances are up and you didn't guessed the word, you loose. Otherwise you win! Have fun! :) "
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor= "#FFFFFF"
+        android:textSize="11pt"/>
+
+</RelativeLayout>

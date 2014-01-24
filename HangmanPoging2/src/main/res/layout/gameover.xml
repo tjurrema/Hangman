@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/hangmangameover">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center">
+    <Button
+        android:id="@+id/new_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NewGame"
+        android:onClick="NewGame"
+        android:textColor= "#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="50dp" />
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Back"
+        android:onClick="GoBack"
+        android:textColor= "#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="0dp"
+        android:layout_weight="0"
+        android:layout_marginRight="0dp" />
+</LinearLayout>
+
+</LinearLayout>

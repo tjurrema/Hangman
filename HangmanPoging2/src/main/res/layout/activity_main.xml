@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hangmanbackground">
+
+    <TextView
+        android:text="Welcome to Hangman !"
+        android:textSize="11pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor= "#FFFFFF"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_start"
+            android:textStyle="bold"
+            android:textColor= "#FFFFFF"
+            android:onClick="sendStart"
+            android:layout_marginLeft="40dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor= "#FFFFFF"
+            android:text="@string/button_rules"
+            android:onClick="sendRules"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_Scores"
+            android:textStyle="bold"
+            android:textColor= "#FFFFFF"
+            android:onClick="sendScores"
+            android:layout_marginLeft="40dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_Quit"
+            android:textStyle="bold"
+            android:textColor= "#FFFFFF"
+            android:onClick="sendQuit" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hangmanwin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONGRATULATIONS ! :)"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="8pt"
+        android:textColor= "#FFFFFF"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="130dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="146dp"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="-68dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp">
+
+        <Button
+            android:id="@+id/new_game_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NewGame"
+            android:onClick="NewGame"
+            android:textColor= "#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="50dp" />
+
+        <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Back"
+        android:onClick="GoBack"
+        android:textColor= "#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="51dp" />
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/go_high_score_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goHighScores"
+        android:onClick="GoHighScore"
+        android:textColor= "#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp" />
+
+</LinearLayout>

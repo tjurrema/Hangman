@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:padding="5dip"
+    android:orientation="vertical"
+    android:background="@drawable/hangmanbackground">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10pt"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Guess the word:"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="12pt"
+            android:textColor= "#FFFFFF"/>
+        <TextView
+            android:id="@+id/word"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="12pt"
+            android:textColor= "#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="50pt"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="TYPE IN A LETTER:"
+            android:typeface="serif"
+            android:textSize="9pt"
+            android:textColor= "#FFFFFF"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center">
+            <EditText android:id="@+id/input"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLength ="1"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                android:hint="@string/edit_letter"
+                android:textColor= "#FFFFFF"/>
+            <Button
+                android:id="@+id/sendInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SendInput"
+                android:onClick="SendInput"
+                android:textColor= "#FFFFFF"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5pt"
+            android:layout_gravity="left">
+            <TextView
+                android:layout_width="60pt"
+                android:layout_height="wrap_content"
+                android:text="Already guessed: "
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="6pt"
+                android:textColor= "#FFFFFF"/>
+            <TextView
+                android:id="@+id/guessed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textSize="6pt"
+                android:textColor= "#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5pt"
+            android:layout_gravity="left">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How many chances you've have left: "
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="6pt"
+                android:textColor= "#FFFFFF"/>
+            <TextView
+                android:id="@+id/chancesView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textSize="6pt"
+                android:textColor= "#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/new_game_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/NewGame"
+                android:onClick="NewGame"
+                android:textColor= "#FFFFFF"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Back"
+                android:onClick="GoBack"
+                android:textColor= "#FFFFFF"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

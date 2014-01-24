@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:padding="5dip"
+    android:orientation="vertical"
+    android:background="@drawable/hangmanscores" >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="High Scores "
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="10pt"
+        android:textColor= "#33b5e5"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="100dp" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="(based on the mistakes) "
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="7pt"
+        android:textColor= "#FFFFFF"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="100dp" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Place: "
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="7pt"
+            android:textColor= "#FFFFFF"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="155dp" />
+        <TextView
+            android:id="@+id/score1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:typeface="serif"
+            android:textSize="10pt"
+            android:textColor= "#33b5e5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second Place: "
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="7pt"
+            android:textColor= "#FFFFFF"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="155dp" />
+        <TextView
+            android:id="@+id/score2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor= "#33b5e5"
+            android:typeface="serif"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third Place: "
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="7pt"
+            android:textColor= "#FFFFFF"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="155dp" />
+        <TextView
+            android:id="@+id/score3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:typeface="serif"
+            android:textSize="10pt"
+            android:textColor= "#33b5e5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="299dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4th Place: "
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="7pt"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="155dp" />
+            <TextView
+                android:id="@+id/score4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="10pt"
+                android:textColor= "#33b5e5"/>
+    </LinearLayout>
+    <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5th Place: "
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="7pt"
+                    android:textColor= "#FFFFFF"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="155dp" />
+                <TextView
+                    android:id="@+id/score5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="10pt"
+                    android:textColor= "#33b5e5"/>
+    </LinearLayout>
+    <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6th Place: "
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        android:textSize="7pt"
+                        android:textColor= "#FFFFFF"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="155dp" />
+                    <TextView
+                        android:id="@+id/score6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        android:textSize="10pt"
+                        android:textColor= "#33b5e5"/>
+    </LinearLayout>
+
+    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7th Place: "
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:textSize="7pt"
+                            android:textColor= "#FFFFFF"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="155dp" />
+                        <TextView
+                            android:id="@+id/score7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:textSize="10pt"
+                            android:textColor= "#33b5e5"/>
+    </LinearLayout>
+    <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8th Place: "
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textSize="7pt"
+                                android:textColor= "#FFFFFF"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginLeft="155dp" />
+                            <TextView
+                                android:id="@+id/score8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textSize="10pt"
+                                android:textColor= "#33b5e5"/>
+    </LinearLayout>
+
+    <LinearLayout
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="9th Place: "
+                                    android:textStyle="bold"
+                                    android:typeface="serif"
+                                    android:textSize="7pt"
+                                    android:textColor= "#FFFFFF"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginLeft="155dp" />
+                                <TextView
+                                    android:id="@+id/score9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textStyle="bold"
+                                    android:typeface="serif"
+                                    android:textSize="10pt"
+                                    android:textColor= "#33b5e5"/>
+    </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="10th Place: "
+                                        android:textStyle="bold"
+                                        android:typeface="serif"
+                                        android:textSize="7pt"
+                                        android:textColor= "#FFFFFF"
+                                        android:layout_marginTop="0dp"
+                                        android:layout_marginLeft="155dp" />
+                                    <TextView
+                                    android:id="@+id/score10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textStyle="bold"
+                                    android:typeface="serif"
+                                    android:textSize="10pt"
+                                        android:textColor= "#33b5e5"/>
+    </LinearLayout>
+</LinearLayout>
