@@ -11,7 +11,7 @@ The idea is to make a native app, where the user can play a game to guess a word
 * the app must inform the user how many chances the user has before losing the game
 * should have a on screen keyboard
 * only accepts letters and isn't case sensitive
-* has two settings, the user can choose how many chances he want to have and how long the word must be
+* the user can set his how many chances the user would have.
 * has highscores of the best 10 results
 * you should see the letters the user have typed in.
 
@@ -26,8 +26,7 @@ The app would be a Android App and I write Hangman in Java.
 Here are few buttons to :
 * start the game,
 * the rules,
-* settings,
-* scores 
+* scores, 
 * and quit. 
 
 #####Game.java
